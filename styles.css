@@ -193,3 +193,16 @@ nav {
 
     cursor:pointer;
 }
+.ticket-btn{
+    display:inline-block;
+
+    padding:12px 30px;
+
+    background:#e63946;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+}
