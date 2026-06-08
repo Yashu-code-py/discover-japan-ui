@@ -1,3 +1,5 @@
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,251 +8,241 @@
 
 body {
     font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
 }
 
-/* Navbar */
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background : rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px);
-    color: white;
-}
-
-/* Hero Section */
+/* HERO SECTION */
 
 .hero {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background:
-        linear-gradient(
-         rgba(0, 0, 0, 0.4),
-         rgba(0, 0, 0, 0.4)
-    
-        ),
-        url("https://images.unsplash.com/photo-1528164344705-47542687000d");
-
+    background-image: url("https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=80");
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.hero-content {
     text-align: center;
-}
-
-.hero h2 {
-    font-size: 3rem;
     color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 30px;
+    border-radius: 15px;
 }
 
-.hero p {
-    color: white;
-    margin-top: 10px;
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
 }
 
-.hero button {
-    margin-top: 20px;
-    padding: 15px 30px;
-    border: none;
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: white;
+    color: #222;
+    text-decoration: none;
     border-radius: 30px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: 0.3s;
+    font-weight: bold;
 }
 
-.hero button:hover {
-    transform: translateY(-3px);
-}
-
-/* Destinations */
+/* DESTINATIONS */
 
 .destinations {
-    padding: 80px 10%;
+    padding: 80px 20px;
     text-align: center;
+}
+
+.destinations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
 .cards {
     display: flex;
-    gap: 20px;
     justify-content: center;
-    margin-top: 40px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .card {
-    width: 250px;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 300px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-}
-.destinations{
-    padding:80px 10%;
-    text-align:center;
-    background: linear-gradient (to bottom , #f8f9fa ,
-    #dde7f5);
+    transform: translateY(-8px);
 }
 
-.destinations h2{
-    margin-bottom:40px;
-    font-size:2rem;
-    color:#1d3557;
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
-.cards{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
 }
 
-.card{
-    background:white;
-    width:280px;
-    padding:30px;
-    border-radius:20px;
-
-    border-top:5px solid #e63946;
-
-
-    box-shadow:0 15px 30px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
+.card h3 {
+    margin-top: 15px;
 }
 
-.card:hover{
-    transform:translateY(-10px);
+.card p {
+    padding: 10px 20px 20px;
+    color: #666;
 }
 
-.card h3{
-    margin-bottom:10px;
-}
-.card img{
-    width:100%;
-    height:180px;
-    object-fit:cover;
+/* SHINKANSEN */
 
-    border-radius:15px;
-
-    margin-bottom:15px;
-}
-.shinkansen{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    gap:50px;
-
-    padding:100px 10%;
-
-    background:#f8f9fa;
+.shinkansen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 10%;
+    background: white;
+    flex-wrap: wrap;
 }
 
-.train-image img{
-    width:500px;
-    border-radius:20px;
-
-    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+.train-image img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 20px;
 }
 
-.train-content{
-    max-width:500px;
+.train-content {
+    max-width: 500px;
 }
 
-.train-content h2{
-    font-size:2.5rem;
-    margin-bottom:20px;
-
-    color:#1d3557;
+.train-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-.train-content p{
-    font-size:1.1rem;
-
-    line-height:1.8;
-
-    margin-bottom:25px;
+.train-content p {
+    line-height: 1.8;
+    color: #555;
 }
 
-.train-content button{
-    padding:12px 30px;
-
-    border:none;
-
-    border-radius:30px;
-
-    background:#e63946;
-
-    color:white;
-
-    cursor:pointer;
-}
-.ticket-btn{
-    display:inline-block;
-
-    padding:12px 30px;
-
-    background:#e63946;
-
-    color:white;
-
-    text-decoration:none;
-
-    border-radius:30px;
-}
-.card{
-    display:block;
-    text-decoration:none;
-    color:inherit;
-    cursor:pointer;
-}
-.osaka-hero{
-    text-align:center;
-    padding:100px 20px;
-    color:white;
-    background:url("https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1200&q=80");
-    background-size:cover;
-    background-position:center;
-}
-.food-card{
-    background:white;
-    width:80%;
-    margin:30px auto;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
-    transition:0.3s;
+.ticket-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #e63946;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
 }
 
-.food-card:hover{
-    transform:translateY(-8px);
+.ticket-btn:hover {
+    background: #c1121f;
 }
 
-.food-card img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
+/* OSAKA PAGE */
+
+.osaka-hero {
+    height: 60vh;
+    background-image: url("https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.food-card h2,
-.food-card p{
-    padding:0 25px;
+.hero-overlay {
+    background: rgba(0,0,0,0.55);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
 }
-.back-btn{
-    display:block;
-    width:max-content;
-    margin:40px auto;
-    padding:15px 25px;
-    background:#e63946;
-    color:white;
-    text-decoration:none;
-    border-radius:30px;
+
+.hero-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.food-page {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.food-page h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.food-card {
+    background: white;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.food-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.food-card h3 {
+    padding: 20px 20px 10px;
+}
+
+.food-card p {
+    padding: 0 20px 20px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #e63946;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.back-btn:hover {
+    background: #c1121f;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .shinkansen {
+        padding: 50px 20px;
+    }
+
+    .train-content {
+        text-align: center;
+    }
+
+    .card {
+        width: 90%;
+    }
 }
