@@ -206,3 +206,9 @@ nav {
 
     border-radius:30px;
 }
+.card{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    cursor:pointer;
+}
