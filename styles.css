@@ -212,3 +212,9 @@ nav {
     color:inherit;
     cursor:pointer;
 }
+.card{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    cursor:pointer;
+}
