@@ -116,7 +116,7 @@ nav {
     width:280px;
     padding:30px;
     border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
     transition:0.3s;
 }
 
