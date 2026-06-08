@@ -1,0 +1,1 @@
+console.log("Discover Japan Loaded");
